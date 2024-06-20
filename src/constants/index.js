@@ -107,4 +107,4 @@ export const navOptions = [
   "Resume",
 ];
 
-export const NAVBAR_TITLE = "my-portfolio";
+export const NAVBAR_TITLE = "My-Portfolio";

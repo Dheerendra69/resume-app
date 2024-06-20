@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import githubIcon from "../../assets/github.png";
 import linkedInIcon from "../../assets/linkedIn.jpeg";
+import profileImage from "../../assets/profileImage.jpg";
 
 function HomePage() {
   return (
@@ -52,7 +53,7 @@ function HomePage() {
       </div>
 
       <div className="homepage_right">
-        <img src="" />
+        <img src={profileImage} />
       </div>
     </div>
   );
