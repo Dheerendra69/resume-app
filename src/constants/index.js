@@ -85,7 +85,7 @@ export const techstackRowTwo = [
   {
     iconName: "Javascript",
     iconImage: js,
-    iconAltProperty: "javascriptImage",
+    iconAltProperty: "jsImage",
   },
   {
     iconName: "CSS",
