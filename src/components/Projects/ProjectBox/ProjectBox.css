@@ -2,13 +2,17 @@
 
 .project_box_container{
     margin: 20px;
-    box-shadow: 0 5px 15px gray;
-    padding: 5px;
+    box-shadow: 5px 5px 15px gray;
+    padding: 25px;
+    border: 2px solid black;
     width: 500px;
+    height: 600px;
 }
 
 .project_box_image_container > img{
-    width: 100%;
+    width: 80%;
+    height: 250px;
+    margin: 10%;
 }
 .project_box_description_container{
     padding: 0 10px;
