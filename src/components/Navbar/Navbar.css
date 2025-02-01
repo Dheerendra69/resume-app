@@ -1,26 +1,23 @@
 .navbar_container{
-    background-color: transparent;
     color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 0;
-    border: 2px solid white;
-    border-radius: 10px;
     padding: 5px 15px;
+    border-bottom: 2px solid white;
+    border-inline : 2px solid white;
 }
 
 .navbar_left{
     font-size: 30px;
     font-weight: 700;
-    color: #DD761C;
+    color: #E16A54;
     padding: 10px;
 }
 
 .navbar_left:hover{
     color: orange;
-    background-color: grey;
-    border-radius: 10px;
 }
 
 .navbar_right{
@@ -31,12 +28,9 @@
     margin-right: 10px;
     padding: 8px 10px;
     font-size: 18px;
-
 }
 
 .navbar_right > p:hover{
-    background-color: grey;
     cursor: pointer;
-    border-radius: 8px;
     color: orange;
 }

@@ -18,7 +18,7 @@ export default function ProjectBox({ image, title, sentences, link }) {
         <p className="project_box_link">
           <span>Link</span>
           <a href={link} target="_blank">
-            {link}
+            {title}
           </a>
         </p>
       </div>

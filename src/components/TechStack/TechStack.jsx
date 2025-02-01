@@ -2,9 +2,7 @@ import "./TechStack.css";
 import TechStackIconContainer from "./TechStackIconContainer/TechStackIconContainer";
 import { techstackRowOne, techstackRowTwo } from "../../constants";
 
-
 function TechStack() {
-
   return (
     <div className="techstack_container">
       <p className="techstack_title">Tech Stack</p>
@@ -19,7 +17,6 @@ function TechStack() {
             />
           );
         })}
-        
       </div>
       <div className="techstack_icon_container">
         {techstackRowTwo.map(function (element, index) {
