@@ -63,7 +63,7 @@ export const projectData = [
       "Welcome to TicTacToe, the classic game of Tic-Tac-Toe built with React. Enjoy a seamless and interactive gaming experience with a sleek, minimalist design.",
       "Play against the computer or challenge a friend in this timeless strategy game.",
     ],
-    link: "https://magenta-begonia-e816e3.netlify.app/",
+    link: "https://tic-tac-toe-emag.netlify.app/",
   },
 ];
 export const techstackRowOne = [
