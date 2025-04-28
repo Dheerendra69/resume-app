@@ -90,7 +90,17 @@
   animation: popIn 0.8s ease forwards;
 }
 
-/* Responsive Enhancements */
+/* --- Responsive Enhancements --- */
+@media (max-width: 1024px) {
+  .education-heading {
+    font-size: 2.2rem;
+  }
+
+  .education-card {
+    padding: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .education-heading {
     font-size: 2rem;
@@ -98,6 +108,10 @@
 
   .education-card {
     padding: 1.5rem;
+  }
+
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
@@ -113,7 +127,20 @@
   .card-subtitle {
     font-size: 0.9rem;
   }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .education-card {
+    padding: 1rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr; /* Stacks the cards in a single column */
+  }
 }
+
 
 /* --- Animations --- */
 
