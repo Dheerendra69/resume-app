@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  background-color: #23486a;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.app {
+  padding: 0 9%;
+  background-color: #09122c;
+}
+html {
+  scroll-behavior: smooth;
+}

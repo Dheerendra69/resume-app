@@ -1,0 +1,108 @@
+.education-container {
+  border-inline: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 20px;
+}
+
+.education-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: whitesmoke;
+  font-weight: 700;
+  margin: 0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.education-card {
+  background: transparent;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 5px;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background-color: orange;
+}
+
+.card-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: red;
+  line-height: 1.6;
+}
+
+.badge-success {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.badge-primary {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 2rem;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-heading {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.9rem;
+  }
+}

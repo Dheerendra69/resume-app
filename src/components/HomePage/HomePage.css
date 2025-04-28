@@ -1,67 +1,91 @@
-.homepage_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    border-inline: 2px solid white ;
+.homepage_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  border-bottom: 2px solid white;
+  border-inline: 2px solid white;
 }
 
-.homepage_left{
-    flex: 0.6;
-    padding-right: 30px;
+.homepage_left {
+  flex: 0.6;
+  padding-left: 50px;
 }
 
-.homepage_left_h1{
-    font-size: 20px;
+.homepage_left_h1 {
+  font-size: 20px;
 }
 
-.red_color{
-    color: #E16A54;
+.red_color {
+  color: #e16a54;
 }
 
-.homepage_left_h2{
-    font-size: 48px;
-    font-weight: 700;
+.homepage_left_h2 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
-.homepage_left_h3{
-    font-size: 30px;
+.homepage_left_h3 {
+  font-size: 30px;
 }
 
-.homepage_left_description{
-    font-size: 16px;
-}
-.homepage_logo{
-    height: 60px;
-    margin: 15px 0;
+.homepage_left_description {
+  font-size: 16px;
 }
 
-
-.icon_container{
-    display: flex;
-    justify-content: space-around;
+.homepage_logo {
+  height: 60px;
+  margin: 15px 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.icon_container > a{
-    border: 2px solid white;
-    padding: 8px;
-    margin-top: 5px;
+.homepage_logo:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
-.homepage_logo{
-    border: pink;
+.icon_container {
+  display: flex;
+  justify-content: space-around;
 }
 
-.icon_container > a:hover{
-    border: 2px solid #E16A54;
-
+.icon_container > a {
+  border: 2px solid white;
+  padding: 8px;
+  margin-top: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.homepage_left_button{
-    margin-top: 25px;
-    font-size: 20px;
-    padding: 8px 10px;
-    background-color: black;
-    color: red;
-    cursor: pointer;
+.icon_container > a:hover {
+  border: 2px solid #e16a54;
+  transform: scale(1.1);
+  background-color: rgba(224, 106, 84, 0.1);
+}
+
+.homepage_left_button {
+  margin-top: 25px;
+  font-size: 20px;
+  padding: 8px 10px;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.homepage_left_button:hover {
+  background-color: #e16a54;
+  color: white;
+}
+.homepage_right {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage_right_circle img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e16a54;
 }

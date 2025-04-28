@@ -1,0 +1,147 @@
+.achievements-container {
+  padding: 2rem 1rem;
+  border-bottom: 2px solid white;
+  border-inline: 2px solid white;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.achievements-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: headingFade 1s ease forwards;
+}
+
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.achievement-card {
+  width: 260px;
+  height: 260px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: cardFadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+}
+
+.achievement-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-description {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+  padding: 0 5px;
+}
+
+.achievement-time {
+  font-size: 0.9rem;
+  color: #ffd700;
+  font-style: italic;
+  margin-top: auto;
+}
+
+.achievement-link {
+  font-size: 1rem;
+  color: #1e90ff;
+  text-decoration: underline;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.achievement-link:hover {
+  color: #63b3ed;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes headingFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-heading {
+    font-size: 2.3rem;
+  }
+
+  .achievement-card {
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .achievement-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-title {
+    font-size: 1.2rem;
+  }
+
+  .achievements-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .achievement-description {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,127 @@
+/* Container for the entire download section */
+.resume-download {
+  text-align: center;
+  padding: 60px 20px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  animation: zoomIn 0.8s ease forwards;
+  border-bottom: 2px solid white;
+  border-inline: 2px solid white;
+}
+/* Heading style for the section */
+.resume-download h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.4;
+  background: transparent;
+}
+
+/* Style for the download button */
+.download-btn {
+  padding: 14px 30px;
+  background-color: #e9f5be;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  width: 50%; /* Adjust width for better responsiveness */
+  max-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #ffd54f; /* Lighter yellow on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  transform: translateY(-4px); /* Button lift effect */
+}
+
+.download-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.6);
+}
+
+/* Paragraph style for additional text */
+.resume-download p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* Style for the resume link (if needed in the section) */
+.resume-download a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.resume-download a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+  .resume-download {
+    height: 50vh; /* Adjust for smaller screens */
+  }
+
+  .resume-download h2 {
+    font-size: 26px;
+  }
+
+  .download-btn {
+    width: 60%; /* Adjust for mobile */
+  }
+
+  .resume-download p {
+    font-size: 14px;
+  }
+}
+
+/* Smaller devices (mobile) */
+@media (max-width: 480px) {
+  .resume-download {
+    height: 45vh; /* Adjust for very small screens */
+  }
+
+  .download-btn {
+    width: 70%;
+    font-size: 16px; /* Slightly smaller text */
+  }
+
+  .resume-download h2 {
+    font-size: 22px; /* Slightly smaller text for mobile */
+    width: 90%;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

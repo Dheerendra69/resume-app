@@ -1,15 +1,22 @@
-
-.projects_title{
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
-    border-inline: 2px solid white ;
+.projects_title {
+  font-size: 3rem; /* responsive unit */
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+  border-inline: 3px solid #ffffffcc; /* slight transparency */
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.projects_box_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-inline: 2px solid white ;
+.projects_box_container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+
+  border-bottom: 2px solid white;
+  border-inline: 2px solid white;
 }

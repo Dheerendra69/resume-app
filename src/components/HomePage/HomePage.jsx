@@ -1,63 +1,123 @@
 import "./HomePage.css";
 import githubIcon from "../../assets/github.png";
 import linkedInIcon from "../../assets/linkedIn.jpeg";
+import profile from "../../assets/Profile.jpg";
+import { motion } from "framer-motion";
+import { description, tagLine } from "../../constants";
 
 function HomePage() {
   return (
     <>
-      <div className="homepage_container">
-        <div className="homepage_left">
-          <p className="homepage_left_h1">
+      <motion.div
+        className="homepage_container"
+        id="about"
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <motion.div
+          className="homepage_left"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          <motion.p className="homepage_left_h1">
             <span className="red_color">Hi,</span> my name is
-          </p>
+          </motion.p>
 
-          <p className="homepage_left_h2">Dheerendra Pratap Singh</p>
+          <motion.p
+            className="homepage_left_h2"
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            // transition={{ delay: 0.6, type: "spring", stiffness: 120 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            Dheerendra Pratap Singh
+          </motion.p>
 
-          <p className="homepage_left_h3">
-            Aspiring web developer, eager learner.
-          </p>
+          <motion.p
+            className="homepage_left_h3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            whileHover={{ scale: 1.1, color: "#e16a54" }}
+          >
+            {tagLine}
+          </motion.p>
 
-          <p className="homepage_left_description">
-            I am a motivated fresher web developer with a strong foundation in
-            HTML, CSS, and JavaScript. I have a keen interest in creating
-            responsive, user-friendly websites and applications. Alongside my
-            web development skills, I am proficient in Data Structures and
-            Algorithms (DSA), which enhances my problem-solving abilities. I
-            enjoy tackling complex coding challenges and continuously improving
-            my code efficiency. My hands-on experience with projects has honed
-            my analytical thinking and debugging skills. I am eager to
-            contribute to a dynamic team, learn from experienced developers, and
-            grow in the ever-evolving field of web development.
-          </p>
+          <motion.p
+            className="homepage_left_description"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            {description}
+          </motion.p>
 
-          <div className="icon_container">
-            <a href="https://github.com/Dheerendra69" target="_blank">
+          <motion.div
+            className="icon_container"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <motion.a
+              href="https://github.com/Dheerendra69"
+              target="_blank"
+              whileHover={{ scale: 1.1, rotate: 10 }}
+            >
               <img
                 src={githubIcon}
                 alt="githubIconImage"
                 className="homepage_logo"
               />
-            </a>
-            <a
+            </motion.a>
+
+            <motion.a
               href="https://www.linkedin.com/in/dheerendrapratapsingh12/"
               target="_blank"
+              whileHover={{ scale: 1.1, rotate: -10 }}
             >
               <img
                 src={linkedInIcon}
-                alt="githubIconImage"
+                alt="linkedInIconImage"
                 className="homepage_logo"
               />
-            </a>
+            </motion.a>
 
-            <a href="mailto:Dheerendra12216237@gmail.com">
-              <button className="homepage_left_button">Get in Touch</button>
-            </a>
-          </div>
+            <motion.a
+              href="mailto:dheerendrapratapsingh1509@gmail.com"
+              whileHover={{ scale: 1.05 }}
+            >
+              <motion.button
+                className="homepage_left_button"
+                whileHover={{
+                  backgroundColor: "#e16a54",
+                  color: "white",
+                  scale: 1.1,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get in Touch
+              </motion.button>
+            </motion.a>
+          </motion.div>
+        </motion.div>
+
+        <div className="homepage_right">
+          <motion.div
+            className="homepage_right_circle"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <img src={profile} alt="Loading..."></img>
+          </motion.div>
         </div>
-      </div>
-      <div>
-        <hr />
-      </div>
+      </motion.div>
     </>
   );
 }

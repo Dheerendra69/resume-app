@@ -1,18 +1,22 @@
-
-.techstack_icons{
-    flex: 33%;
-    width: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.techstack_icons {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.techstack_icons > img{
-    width: 80px;
-    cursor: pointer;
+.techstack_icons > img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 50%; /* makes image circular */
+  object-fit: cover; /* ensures full image fills the circle without distortion */
+  border: 2px solid white; /* optional: gives a clean circle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional: subtle shadow for depth */
+  transition: transform 0.3s ease;
 }
 
-.techstack_icons > img:hover{
-    transform: scale(1.2);
+.techstack_icons > img:hover {
+  transform: scale(1.2);
 }

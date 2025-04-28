@@ -1,14 +1,30 @@
-
-.techstack_container{
-    border-inline: 2px solid white ;
+.techstack_container {
+  border-inline: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 40px 20px;
 }
 
-.techstack_title{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
+.techstack_title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
-.techstack_icon_container{
-    display: flex;
+.techstack_icon_container {
+  display: flex;
+  flex-wrap: wrap; /* wrap icons to next row if needed */
+  justify-content: center;
+  gap: 30px; /* spacing between icons */
+  margin-bottom: 30px;
+}
+
+.techstack_icon_container > div {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.techstack_icon_container > div:hover {
+  transform: scale(1.1);
 }
