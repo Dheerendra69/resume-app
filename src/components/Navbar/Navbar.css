@@ -43,3 +43,36 @@ html {
   text-decoration: none;
   color: inherit;
 }
+@media (max-width: 768px) {
+  .navbar_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar_right {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar_right > a {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .navbar_left {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar_left {
+    font-size: 22px;
+  }
+
+  .navbar_right > a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

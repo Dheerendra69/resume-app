@@ -4,3 +4,16 @@
   padding: 10px 20px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 15px;
+    font-size: 12px;
+  }
+}

@@ -15,7 +15,6 @@ const Contacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add logic to send data to backend here
     alert("Message sent!");
     setFormData({ name: "", email: "", message: "" });
   };
@@ -23,7 +22,7 @@ const Contacts = () => {
   return (
     <section className="contact-section" id="contact">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2 className="contact-heading">Contact Me</h2>
         <form onSubmit={handleSubmit} className="contact-form">
           <input
             type="text"

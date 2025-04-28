@@ -20,3 +20,26 @@
   border-bottom: 2px solid white;
   border-inline: 2px solid white;
 }
+@media (max-width: 768px) {
+  .projects_title {
+    font-size: 2.5rem;
+    padding: 0.8rem 0;
+  }
+
+  .projects_box_container {
+    gap: 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects_title {
+    font-size: 2rem;
+    padding: 0.6rem 0;
+  }
+
+  .projects_box_container {
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+  }
+}

@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import { projectData } from "../../constants";
 import ProjectBox from "./ProjectBox/ProjectBox";
-import ProjectDetailsOverlay from "./ProjectsDetailsOverlay";
 import "./Projects.css";
 import { useState } from "react";
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
   return (
     <motion.div
       id="projects"
@@ -24,7 +22,7 @@ export default function Projects() {
       >
         Projects
       </motion.p>
-      <div className={`relative ${selectedProject ? "blur-sm" : ""}`}>
+      <div className={`relative`}>
         <div className="projects_box_container">
           {projectData.map((project) => (
             <ProjectBox
@@ -33,15 +31,8 @@ export default function Projects() {
               image={project.image}
               sentences={project.sentences}
               link={project.link}
-              onShowMore={() => setSelectedProject(project)}
             />
           ))}
-          {selectedProject && (
-            <ProjectDetailsOverlay
-              project={selectedProject}
-              onClose={() => setSelectedProject(null)}
-            />
-          )}
         </div>
       </div>
     </motion.div>

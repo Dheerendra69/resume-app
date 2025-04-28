@@ -5,6 +5,16 @@
   height: 60vh;
   border-bottom: 2px solid white;
   border-inline: 2px solid white;
+  gap: 20px;
+}
+/* By default, homepage_left appears first */
+.homepage_left {
+  order: 1; /* Normal order */
+}
+
+/* homepage_right will appear second by default */
+.homepage_right {
+  order: 2; /* Normal order */
 }
 
 .homepage_left {
@@ -88,4 +98,93 @@
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #e16a54;
+}
+@media (max-width: 768px) {
+  .homepage_container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .homepage_left,
+  .homepage_right {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .homepage_left_h1 {
+    font-size: 18px;
+  }
+
+  .homepage_left_h2 {
+    font-size: 36px;
+  }
+
+  .homepage_left_h3 {
+    font-size: 24px;
+  }
+
+  .homepage_left_description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .homepage_logo {
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .homepage_right_circle img {
+    width: 250px;
+    height: 250px;
+  }
+  .homepage_container {
+    flex-direction: column; /* Stack them vertically */
+    align-items: center; /* Center the content */
+  }
+
+  /* On smaller screens, homepage_right appears first */
+  .homepage_right {
+    order: 1; /* homepage_right comes first */
+  }
+
+  .homepage_left {
+    order: 2; /* homepage_left comes second */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage_left_h2 {
+    font-size: 28px;
+  }
+
+  .homepage_left_h3 {
+    font-size: 20px;
+  }
+
+  .homepage_right_circle img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .homepage_left_button {
+    font-size: 16px;
+    padding: 6px 8px;
+    margin-top: 20px;
+  }
+  .homepage_container {
+    flex-direction: column; /* Stack them vertically */
+    align-items: center; /* Center the content */
+  }
+
+  /* On smaller screens, homepage_right appears first */
+  .homepage_right {
+    order: 1; /* homepage_right comes first */
+  }
+
+  .homepage_left {
+    order: 2; /* homepage_left comes second */
+  }
 }

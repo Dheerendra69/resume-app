@@ -28,3 +28,31 @@
 .techstack_icon_container > div:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .techstack_title {
+    font-size: 30px;
+  }
+
+  .techstack_icon_container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .techstack_title {
+    font-size: 24px;
+  }
+
+  .techstack_icon_container {
+    gap: 15px;
+  }
+
+  .techstack_icon_container > div {
+    transform: scale(0.9);
+  }
+
+  .techstack_icon_container > div:hover {
+    transform: scale(1);
+  }
+}

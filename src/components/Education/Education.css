@@ -1,7 +1,10 @@
+/* --- Existing styles kept intact --- */
+
 .education-container {
   border-inline: 2px solid white;
   border-bottom: 2px solid white;
   padding: 20px;
+  animation: fadeInContainer 1s ease forwards;
 }
 
 .education-heading {
@@ -10,6 +13,7 @@
   color: whitesmoke;
   font-weight: 700;
   margin: 0;
+  animation: slideDown 1s ease forwards;
 }
 
 .education-grid {
@@ -25,6 +29,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 5px;
+  animation: fadeInCard 1s ease forwards;
 }
 
 .education-card:hover {
@@ -43,6 +48,7 @@
   border: 2px solid white;
   border-radius: 10px;
   height: 300px;
+  animation: zoomIn 0.8s ease forwards;
 }
 
 .card-title {
@@ -71,6 +77,7 @@
   color: #fff;
   border-radius: 12px;
   font-size: 0.9rem;
+  animation: popIn 0.8s ease forwards;
 }
 
 .badge-primary {
@@ -80,6 +87,7 @@
   color: #fff;
   border-radius: 12px;
   font-size: 0.9rem;
+  animation: popIn 0.8s ease forwards;
 }
 
 /* Responsive Enhancements */
@@ -104,5 +112,62 @@
 
   .card-subtitle {
     font-size: 0.9rem;
+  }
+}
+
+/* --- Animations --- */
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

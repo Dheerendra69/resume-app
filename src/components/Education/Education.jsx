@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import { useInView } from "../../hooks/useView";
 import "./Education.css";
 
 const Education = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.2, // how much of the card should be visible before animation
+  });
   return (
-    <div className="education-container">
+    <div ref={ref} className={`education-container ${inView ? "in-view" : ""}`}>
       <h2 className="education-heading">Education</h2>
       <div className="education-grid">
         <motion.div

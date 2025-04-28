@@ -25,6 +25,7 @@ h2 {
   padding: 20px;
 }
 
+
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
@@ -54,4 +55,53 @@ h2 {
 
 .contact-form button:hover {
   background-color: #0056b3;
+}
+
+.contact-heading {
+  color: white;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+  }
+
+  .contact-form button {
+    font-size: 12px;
+  }
 }
