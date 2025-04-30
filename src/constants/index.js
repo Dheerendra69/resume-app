@@ -24,7 +24,7 @@ export const projectData = [
       "Our user-friendly website features detailed product descriptions, vibrant images, and easy navigation. Enjoy exclusive deals, fast shipping, and excellent customer service.",
       "Whether for school, work, or personal projects, find everything you need to stay organized and inspired. Shop now and elevate your stationery game with our carefully curated collection!",
     ],
-    link: "https://stationaryheaven-final.onrender.com/",
+    link: "https://blogging-website-react.netlify.app/",
   },
   {
     image:
