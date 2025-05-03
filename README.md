@@ -1,11 +1,11 @@
-
-
 # 💼 React Portfolio Website
 
 A personal portfolio website built with React to showcase my projects, skills, and experience. It includes a modern design with smooth navigation, animations using Framer Motion, and responsive layouts.
 
----
-# 💼 React Portfolio Website  
+### 🔐 Hero Page
+![Hero Page](./website-demo/Hero-Page.jpeg)
+
+--- 
 Live Site 👉 [https://dheerendra-dev.netlify.app](https://dheerendra-dev.netlify.app/)
 
 ## ✨ Features
