@@ -6,7 +6,7 @@ const ResumeDownload = () => {
     <div className="resume-download" id="resume" data-aos="zoom-in">
       <h2>Access My Resume</h2>
       <a
-        href="https://drive.google.com/uc?export=download&id=1tGs53F2Umk5ipKfN1Cfq9S6W95cmNFH3"
+        href=""
         className="download-btn"
       >
         Download Resume
